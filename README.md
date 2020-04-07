@@ -3,7 +3,7 @@ Refugis - OAuthBundle
 [![Build Status](https://travis-ci.com/refugis/oauth-bundle.svg?branch=master)](https://travis-ci.com/refugis/oauth-bundle)
 
 Easily integrate OAuth authentication in your Symfony application.
-Originally written by [Fazland team](https://www.github.com/fazland/elastica-odm-bundle).
+Originally written by [Fazland team](https://www.github.com/fazland/oauth-bundle).
 
 Requirements
 ------------
