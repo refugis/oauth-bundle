@@ -7,7 +7,7 @@ Originally written by [Fazland team](https://www.github.com/fazland/oauth-bundle
 
 Requirements
 ------------
-- php ^7.3
+- php ^7.4
 - symfony/symfony ^4.3|^5.0
 
 Installation
