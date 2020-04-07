@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Fazland\OAuthBundle\Exception;
+namespace Refugis\OAuthBundle\Exception;
 
 class CredentialsExpiredException extends \RuntimeException
 {

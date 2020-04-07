@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Fazland\OAuthBundle\GrantType;
+namespace Refugis\OAuthBundle\GrantType;
 
 use OAuth2\ClientAssertionType\HttpBasic;
 use OAuth2\GrantType\GrantTypeInterface;

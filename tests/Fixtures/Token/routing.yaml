@@ -1,9 +1,9 @@
 token:
     path: '/token'
-    controller: 'Fazland\OAuthBundle\Controller\TokenController::tokenAction'
+    controller: 'Refugis\OAuthBundle\Controller\TokenController::tokenAction'
     methods: ['GET', 'POST']
 
 options:
     path: '/token'
-    controller: 'Fazland\OAuthBundle\Controller\TokenController::optionsAction'
+    controller: 'Refugis\OAuthBundle\Controller\TokenController::optionsAction'
     methods: ['OPTIONS']

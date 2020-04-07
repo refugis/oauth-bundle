@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace Fazland\OAuthBundle\Tests\Fixtures\Token;
+namespace Refugis\OAuthBundle\Tests\Fixtures\Token;
 
-use Fazland\OAuthBundle\Security\Provider\UserProviderInterface;
-use Fazland\OAuthBundle\Security\User\OAuthClientInterface;
+use Refugis\OAuthBundle\Security\Provider\UserProviderInterface;
+use Refugis\OAuthBundle\Security\User\OAuthClientInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 class UserProvider implements UserProviderInterface

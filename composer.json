@@ -1,16 +1,16 @@
 {
-    "name": "fazland/oauth-bundle",
+    "name": "refugis/oauth-bundle",
     "description": "Easily integrate OAuth authentication in your Symfony application",
     "type": "symfony-bundle",
     "license": "MIT",
     "authors": [
         {
             "name": "Massimiliano Braglia",
-            "email": "massimiliano.braglia@fazland.com"
+            "email": "massimiliano.braglia@gmail.com"
         },
         {
             "name": "Alessandro Chitolina",
-            "email": "alessandro.chitolina@fazland.com"
+            "email": "alekitto@gmail.com"
         },
         {
             "name": "Fazland Team",
@@ -39,12 +39,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Fazland\\OAuthBundle\\": "src/"
+            "Refugis\\OAuthBundle\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Fazland\\OAuthBundle\\Tests\\": "tests/"
+            "Refugis\\OAuthBundle\\Tests\\": "tests/"
         }
     },
     "config": {

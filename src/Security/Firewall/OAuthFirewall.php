@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace Fazland\OAuthBundle\Security\Firewall;
+namespace Refugis\OAuthBundle\Security\Firewall;
 
-use Fazland\OAuthBundle\Exception\OAuthAuthenticationException;
-use Fazland\OAuthBundle\Security\Token\OAuthToken;
+use Refugis\OAuthBundle\Exception\OAuthAuthenticationException;
+use Refugis\OAuthBundle\Security\Token\OAuthToken;
 use OAuth2\HttpFoundationBridge\Request;
 use OAuth2\Response;
 use OAuth2\Server;

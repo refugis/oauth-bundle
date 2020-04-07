@@ -1,14 +1,14 @@
 <?php declare(strict_types=1);
 
-namespace Fazland\OAuthBundle\Tests\ResponseType;
+namespace Refugis\OAuthBundle\Tests\ResponseType;
 
-use Fazland\OAuthBundle\Encryption\Jwt;
-use Fazland\OAuthBundle\Encryption\KeyPair\KeyPairInterface;
-use Fazland\OAuthBundle\Enum\SignatureAlgorithm;
-use Fazland\OAuthBundle\ResponseType\JwtAccessToken;
-use Fazland\OAuthBundle\Security\Provider\UserProviderInterface;
-use Fazland\OAuthBundle\Security\User\OAuthClientInterface;
-use Fazland\OAuthBundle\Storage\Jwt as JwtStorage;
+use Refugis\OAuthBundle\Encryption\Jwt;
+use Refugis\OAuthBundle\Encryption\KeyPair\KeyPairInterface;
+use Refugis\OAuthBundle\Enum\SignatureAlgorithm;
+use Refugis\OAuthBundle\ResponseType\JwtAccessToken;
+use Refugis\OAuthBundle\Security\Provider\UserProviderInterface;
+use Refugis\OAuthBundle\Security\User\OAuthClientInterface;
+use Refugis\OAuthBundle\Storage\Jwt as JwtStorage;
 use OAuth2\Storage\RefreshTokenInterface;
 use PHPUnit\Framework\TestCase;
 use Prophecy\Argument;

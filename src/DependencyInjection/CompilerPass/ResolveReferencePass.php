@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Fazland\OAuthBundle\DependencyInjection\CompilerPass;
+namespace Refugis\OAuthBundle\DependencyInjection\CompilerPass;
 
-use Fazland\OAuthBundle\DependencyInjection\Reference as OAuthReference;
+use Refugis\OAuthBundle\DependencyInjection\Reference as OAuthReference;
 use Symfony\Component\DependencyInjection\Compiler\AbstractRecursivePass;
 use Symfony\Component\DependencyInjection\Reference;
 

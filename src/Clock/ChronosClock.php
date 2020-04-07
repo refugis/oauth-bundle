@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Fazland\OAuthBundle\Clock;
+namespace Refugis\OAuthBundle\Clock;
 
 use Cake\Chronos\Chronos;
 use Lcobucci\Clock\Clock;

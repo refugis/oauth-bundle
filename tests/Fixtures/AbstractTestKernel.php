@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Fazland\OAuthBundle\Tests\Fixtures;
+namespace Refugis\OAuthBundle\Tests\Fixtures;
 
-use Fazland\OAuthBundle\OAuthBundle;
+use Refugis\OAuthBundle\OAuthBundle;
 use Symfony\Bundle\FrameworkBundle\FrameworkBundle;
 use Symfony\Bundle\SecurityBundle\SecurityBundle;
 use Symfony\Component\HttpKernel\Kernel;

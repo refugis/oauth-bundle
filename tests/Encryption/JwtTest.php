@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace Fazland\OAuthBundle\Tests\Encryption;
+namespace Refugis\OAuthBundle\Tests\Encryption;
 
-use Fazland\OAuthBundle\Encryption\Jwt;
-use Fazland\OAuthBundle\Enum\SignatureAlgorithm;
+use Refugis\OAuthBundle\Encryption\Jwt;
+use Refugis\OAuthBundle\Enum\SignatureAlgorithm;
 use PHPUnit\Framework\TestCase;
 
 class JwtTest extends TestCase

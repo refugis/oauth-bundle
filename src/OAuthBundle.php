@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace Fazland\OAuthBundle;
+namespace Refugis\OAuthBundle;
 
-use Fazland\OAuthBundle\DependencyInjection\CompilerPass\CreateClientCommandPass;
-use Fazland\OAuthBundle\DependencyInjection\CompilerPass\ResolveReferencePass;
-use Fazland\OAuthBundle\Security\Factory\OAuthFactory;
+use Refugis\OAuthBundle\DependencyInjection\CompilerPass\CreateClientCommandPass;
+use Refugis\OAuthBundle\DependencyInjection\CompilerPass\ResolveReferencePass;
+use Refugis\OAuthBundle\Security\Factory\OAuthFactory;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

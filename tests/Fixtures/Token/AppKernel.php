@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Fazland\OAuthBundle\Tests\Fixtures\Token;
+namespace Refugis\OAuthBundle\Tests\Fixtures\Token;
 
-use Fazland\OAuthBundle\Tests\Fixtures\AbstractTestKernel;
+use Refugis\OAuthBundle\Tests\Fixtures\AbstractTestKernel;
 use Symfony\Component\Config\Loader\LoaderInterface;
 
 class AppKernel extends AbstractTestKernel

@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Fazland\OAuthBundle\ArgumentResolver;
+namespace Refugis\OAuthBundle\ArgumentResolver;
 
-use Fazland\OAuthBundle\Security\Firewall\OAuthFirewall;
+use Refugis\OAuthBundle\Security\Firewall\OAuthFirewall;
 use OAuth2\Server;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Controller\ArgumentValueResolverInterface;

@@ -1,12 +1,12 @@
 <?php declare(strict_types=1);
 
-namespace Fazland\OAuthBundle\Security\Factory;
+namespace Refugis\OAuthBundle\Security\Factory;
 
-use Fazland\OAuthBundle\DependencyInjection\Reference as OAuthReference;
-use Fazland\OAuthBundle\GrantType;
-use Fazland\OAuthBundle\Security\Firewall\OAuthEntryPoint;
-use Fazland\OAuthBundle\Security\Firewall\OAuthFirewall;
-use Fazland\OAuthBundle\Security\Provider\OAuthProvider;
+use Refugis\OAuthBundle\DependencyInjection\Reference as OAuthReference;
+use Refugis\OAuthBundle\GrantType;
+use Refugis\OAuthBundle\Security\Firewall\OAuthEntryPoint;
+use Refugis\OAuthBundle\Security\Firewall\OAuthFirewall;
+use Refugis\OAuthBundle\Security\Provider\OAuthProvider;
 use Symfony\Bundle\SecurityBundle\DependencyInjection\Security\Factory\SecurityFactoryInterface;
 use Symfony\Component\Config\Definition\Builder\NodeDefinition;
 use Symfony\Component\DependencyInjection\ChildDefinition;
@@ -16,7 +16,7 @@ use Symfony\Component\DependencyInjection\Reference;
 
 class OAuthFactory implements SecurityFactoryInterface
 {
-    public const USER_PROVIDERS_PARAMETER_NAME = 'fazland_oauth.user_providers';
+    public const USER_PROVIDERS_PARAMETER_NAME = 'refugis_oauth.user_providers';
 
     /**
      * {@inheritdoc}
@@ -76,10 +76,10 @@ class OAuthFactory implements SecurityFactoryInterface
                 ->scalarNode('access_token_storage')->end()
                 ->scalarNode('refresh_token_storage')->end()
                 ->scalarNode('client_credentials_storage')
-                    ->defaultValue('fazland_oauth.storage.client_credentials.abstract')
+                    ->defaultValue('refugis_oauth.storage.client_credentials.abstract')
                 ->end()
                 ->scalarNode('jwt_storage')
-                    ->defaultValue('fazland_oauth.storage.jwt.abstract')
+                    ->defaultValue('refugis_oauth.storage.jwt.abstract')
                 ->end()
                 ->scalarNode('jwt_issuer')
                     ->defaultValue('app')
@@ -124,11 +124,11 @@ class OAuthFactory implements SecurityFactoryInterface
         }
 
         $storageId = $clientCredentialsStorageId;
-        if ('fazland_oauth.storage.client_credentials.abstract' === $clientCredentialsStorageId) {
+        if ('refugis_oauth.storage.client_credentials.abstract' === $clientCredentialsStorageId) {
             $definition = new ChildDefinition($clientCredentialsStorageId);
             $definition->replaceArgument(0, new OAuthReference($config['oauth_user_provider']));
 
-            $storageId = 'fazland_oauth.storage.client_credentials.'.$id;
+            $storageId = 'refugis_oauth.storage.client_credentials.'.$id;
             $container->setDefinition($storageId, $definition);
         }
 
@@ -143,14 +143,14 @@ class OAuthFactory implements SecurityFactoryInterface
         }
 
         $storageId = $jwtStorageId;
-        if ('fazland_oauth.storage.jwt.abstract' === $jwtStorageId) {
+        if ('refugis_oauth.storage.jwt.abstract' === $jwtStorageId) {
             $definition = new ChildDefinition($jwtStorageId);
             $definition
                 ->replaceArgument(0, new OAuthReference($config['oauth_user_provider']))
                 ->replaceArgument(1, ['iss' => $config['jwt_issuer']])
             ;
 
-            $storageId = 'fazland_oauth.storage.jwt.'.$id;
+            $storageId = 'refugis_oauth.storage.jwt.'.$id;
             $container->setDefinition($storageId, $definition);
         }
 
@@ -159,8 +159,8 @@ class OAuthFactory implements SecurityFactoryInterface
 
     private function createJwtResponseType(ContainerBuilder $container, string $id, array $config): string
     {
-        $jwtResponseTypeId = 'fazland_oauth.response_type.jwt_access_token.'.$id;
-        $container->setDefinition($jwtResponseTypeId, new ChildDefinition('fazland_oauth.response_type.jwt_access_token.abstract'))
+        $jwtResponseTypeId = 'refugis_oauth.response_type.jwt_access_token.'.$id;
+        $container->setDefinition($jwtResponseTypeId, new ChildDefinition('refugis_oauth.response_type.jwt_access_token.abstract'))
             ->replaceArgument(0, new OAuthReference($config['oauth_user_provider']))
             ->replaceArgument(1, isset($config['access_token_storage']) ? new OAuthReference($config['access_token_storage']) : null)
             ->replaceArgument(2, isset($config['refresh_token_storage']) ? new OAuthReference($config['refresh_token_storage']) : null)
@@ -178,8 +178,8 @@ class OAuthFactory implements SecurityFactoryInterface
         ?string $jwtStorageId,
         string $jwtResponseTypeId
     ): string {
-        $serverId = 'fazland_oauth.server.'.$id;
-        $serverDefinition = $container->setDefinition($serverId, new ChildDefinition('fazland_oauth.server.abstract'));
+        $serverId = 'refugis_oauth.server.'.$id;
+        $serverDefinition = $container->setDefinition($serverId, new ChildDefinition('refugis_oauth.server.abstract'));
         $serverDefinition->addMethodCall('addResponseType', [new OAuthReference($jwtResponseTypeId)]);
 
         if (null !== $clientCredentialsStorageId) {

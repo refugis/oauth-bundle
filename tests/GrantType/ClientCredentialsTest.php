@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Fazland\OAuthBundle\Tests\OAuth\GrantType;
+namespace Refugis\OAuthBundle\Tests\OAuth\GrantType;
 
-use Fazland\OAuthBundle\GrantType\ClientCredentials;
+use Refugis\OAuthBundle\GrantType\ClientCredentials;
 use OAuth2\ResponseType\AccessTokenInterface;
 use OAuth2\Storage\ClientCredentialsInterface;
 use PHPUnit\Framework\TestCase;

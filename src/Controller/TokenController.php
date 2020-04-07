@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Fazland\OAuthBundle\Controller;
+namespace Refugis\OAuthBundle\Controller;
 
 use OAuth2\HttpFoundationBridge\Request as OAuthRequest;
 use OAuth2\Response as OAuthResponse;

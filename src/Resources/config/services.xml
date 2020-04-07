@@ -7,18 +7,18 @@
         <defaults public="false" />
 
         <!-- Controller -->
-        <service id="Fazland\OAuthBundle\Controller\TokenController" autowire="true">
+        <service id="Refugis\OAuthBundle\Controller\TokenController" autowire="true">
             <tag name="controller.service_arguments" />
         </service>
 
         <!-- Utils -->
-        <service id="Fazland\OAuthBundle\Encryption\Jwt" />
+        <service id="Refugis\OAuthBundle\Encryption\Jwt" />
 
         <!-- Storage -->
-        <service id="fazland_oauth.storage.client_credentials.abstract" class="Fazland\OAuthBundle\Storage\ClientCredentials" abstract="true">
+        <service id="refugis_oauth.storage.client_credentials.abstract" class="Refugis\OAuthBundle\Storage\ClientCredentials" abstract="true">
             <argument />
         </service>
-        <service id="fazland_oauth.storage.jwt.abstract" class="Fazland\OAuthBundle\Storage\Jwt" abstract="true">
+        <service id="refugis_oauth.storage.jwt.abstract" class="Refugis\OAuthBundle\Storage\Jwt" abstract="true">
             <argument />
             <argument type="collection" />
             <call method="setLogger">
@@ -27,21 +27,21 @@
         </service>
 
         <!-- Response types -->
-        <service id="fazland_oauth.response_type.jwt_access_token.abstract" class="Fazland\OAuthBundle\ResponseType\JwtAccessToken" abstract="true">
+        <service id="refugis_oauth.response_type.jwt_access_token.abstract" class="Refugis\OAuthBundle\ResponseType\JwtAccessToken" abstract="true">
             <argument />
             <argument />
             <argument />
             <argument type="collection" />
-            <argument type="service" id="Fazland\OAuthBundle\Encryption\Jwt" />
+            <argument type="service" id="Refugis\OAuthBundle\Encryption\Jwt" />
         </service>
 
         <!-- Server -->
-        <service id="fazland_oauth.server.abstract" class="OAuth2\Server" abstract="true" />
+        <service id="refugis_oauth.server.abstract" class="OAuth2\Server" abstract="true" />
 
         <!-- EntryPoint -->
-        <service id="Fazland\OAuthBundle\Security\Firewall\OAuthEntryPoint" />
+        <service id="Refugis\OAuthBundle\Security\Firewall\OAuthEntryPoint" />
 
-        <service id="Fazland\OAuthBundle\ArgumentResolver\OAuthServerResolver">
+        <service id="Refugis\OAuthBundle\ArgumentResolver\OAuthServerResolver">
             <argument id="security.firewall.map" type="service" />
             <tag name="controller.argument_value_resolver" priority="25" />
         </service>

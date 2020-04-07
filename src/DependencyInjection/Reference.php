@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Fazland\OAuthBundle\DependencyInjection;
+namespace Refugis\OAuthBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerInterface;
 

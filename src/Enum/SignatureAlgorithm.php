@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Fazland\OAuthBundle\Enum;
+namespace Refugis\OAuthBundle\Enum;
 
 use MyCLabs\Enum\Enum;
 

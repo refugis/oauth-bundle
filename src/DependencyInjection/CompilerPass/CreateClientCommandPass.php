@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace Fazland\OAuthBundle\DependencyInjection\CompilerPass;
+namespace Refugis\OAuthBundle\DependencyInjection\CompilerPass;
 
-use Fazland\OAuthBundle\Command\CreateClientCommand;
-use Fazland\OAuthBundle\Security\Factory\OAuthFactory;
+use Refugis\OAuthBundle\Command\CreateClientCommand;
+use Refugis\OAuthBundle\Security\Factory\OAuthFactory;
 use Symfony\Component\DependencyInjection\Compiler\CompilerPassInterface;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Reference;

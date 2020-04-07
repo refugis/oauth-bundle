@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace Fazland\OAuthBundle\Security\Provider;
+namespace Refugis\OAuthBundle\Security\Provider;
 
-use Fazland\OAuthBundle\Exception\OAuthAuthenticationException;
-use Fazland\OAuthBundle\Security\Token\OAuthToken;
+use Refugis\OAuthBundle\Exception\OAuthAuthenticationException;
+use Refugis\OAuthBundle\Security\Token\OAuthToken;
 use OAuth2\HttpFoundationBridge\Response;
 use Symfony\Component\Security\Core\Authentication\Provider\AuthenticationProviderInterface;
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;

@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace Fazland\OAuthBundle\Security\Firewall;
+namespace Refugis\OAuthBundle\Security\Firewall;
 
 use OAuth2\Response as OAuthResponse;
 use Symfony\Component\HttpFoundation\JsonResponse;

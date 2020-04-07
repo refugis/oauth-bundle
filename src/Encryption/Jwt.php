@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace Fazland\OAuthBundle\Encryption;
+namespace Refugis\OAuthBundle\Encryption;
 
-use Fazland\OAuthBundle\Enum\SignatureAlgorithm;
-use Fazland\OAuthBundle\Storage\Jwt as StorageJwt;
+use Refugis\OAuthBundle\Enum\SignatureAlgorithm;
+use Refugis\OAuthBundle\Storage\Jwt as StorageJwt;
 use Lcobucci\Jose\Parsing\Parser as Decoder;
 use Lcobucci\JWT\Parser as ParserInterface;
 use Lcobucci\JWT\Signer\Ecdsa;

@@ -1,13 +1,13 @@
 <?php declare(strict_types=1);
 
-namespace Fazland\OAuthBundle\Storage;
+namespace Refugis\OAuthBundle\Storage;
 
 use Cake\Chronos\Chronos;
-use Fazland\OAuthBundle\Clock\ChronosClock;
-use Fazland\OAuthBundle\Encryption\KeyPair\KeyPairInterface;
-use Fazland\OAuthBundle\Encryption\SignerFactory;
-use Fazland\OAuthBundle\Enum\SignatureAlgorithm;
-use Fazland\OAuthBundle\Security\Provider\UserProviderInterface;
+use Refugis\OAuthBundle\Clock\ChronosClock;
+use Refugis\OAuthBundle\Encryption\KeyPair\KeyPairInterface;
+use Refugis\OAuthBundle\Encryption\SignerFactory;
+use Refugis\OAuthBundle\Enum\SignatureAlgorithm;
+use Refugis\OAuthBundle\Security\Provider\UserProviderInterface;
 use Lcobucci\Jose\Parsing\Parser as Decoder;
 use Lcobucci\JWT\Parser;
 use Lcobucci\JWT\Signer\Key;

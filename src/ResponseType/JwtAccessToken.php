@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace Fazland\OAuthBundle\ResponseType;
+namespace Refugis\OAuthBundle\ResponseType;
 
 use Cake\Chronos\Chronos;
-use Fazland\OAuthBundle\Encryption\KeyPair\KeyPairInterface;
-use Fazland\OAuthBundle\Security\Provider\UserProviderInterface;
+use Refugis\OAuthBundle\Encryption\KeyPair\KeyPairInterface;
+use Refugis\OAuthBundle\Security\Provider\UserProviderInterface;
 use OAuth2\Encryption\EncryptionInterface;
 use OAuth2\ResponseType\JwtAccessToken as BaseJwtAccessToken;
 use OAuth2\Storage\AccessTokenInterface as AccessTokenStorageInterface;

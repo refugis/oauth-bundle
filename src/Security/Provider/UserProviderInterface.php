@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Fazland\OAuthBundle\Security\Provider;
+namespace Refugis\OAuthBundle\Security\Provider;
 
-use Fazland\OAuthBundle\Security\User\OAuthClientInterface;
+use Refugis\OAuthBundle\Security\User\OAuthClientInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 interface UserProviderInterface

@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Fazland\OAuthBundle\Command;
+namespace Refugis\OAuthBundle\Command;
 
-use Fazland\OAuthBundle\Security\Provider\UserProviderInterface;
+use Refugis\OAuthBundle\Security\Provider\UserProviderInterface;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
@@ -19,7 +19,7 @@ final class CreateClientCommand extends Command
 
     public function __construct()
     {
-        parent::__construct('fazland:oauth:create-client');
+        parent::__construct('refugis:oauth:create-client');
 
         $this->userProviders = [];
     }
@@ -53,7 +53,7 @@ final class CreateClientCommand extends Command
     protected function execute(InputInterface $input, OutputInterface $output): void
     {
         $io = new SymfonyStyle($input, $output);
-        $io->title('Fazland - Create OAuth Client');
+        $io->title('Refugis - Create OAuth Client');
 
         $countUserProviders = \count($this->userProviders);
         if (0 === $countUserProviders) {

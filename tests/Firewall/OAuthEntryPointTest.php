@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Fazland\OAuthBundle\Tests\Firewall;
+namespace Refugis\OAuthBundle\Tests\Firewall;
 
-use Fazland\OAuthBundle\Security\Firewall\OAuthEntryPoint;
+use Refugis\OAuthBundle\Security\Firewall\OAuthEntryPoint;
 use PHPUnit\Framework\TestCase;
 use Prophecy\Prophecy\ObjectProphecy;
 use Symfony\Component\HttpFoundation\Request;

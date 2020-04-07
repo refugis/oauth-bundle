@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace Fazland\OAuthBundle\Storage;
+namespace Refugis\OAuthBundle\Storage;
 
-use Fazland\OAuthBundle\Security\Provider\UserProviderInterface;
-use Fazland\OAuthBundle\Security\User\OAuthClientInterface;
+use Refugis\OAuthBundle\Security\Provider\UserProviderInterface;
+use Refugis\OAuthBundle\Security\User\OAuthClientInterface;
 use OAuth2\Storage\ClientCredentialsInterface;
 
 class ClientCredentials implements ClientCredentialsInterface

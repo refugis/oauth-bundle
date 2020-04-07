@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Fazland\OAuthBundle\Encryption;
+namespace Refugis\OAuthBundle\Encryption;
 
-use Fazland\OAuthBundle\Enum\SignatureAlgorithm;
+use Refugis\OAuthBundle\Enum\SignatureAlgorithm;
 use Lcobucci\JWT\Signer;
 use Lcobucci\JWT\Signer\Ecdsa;
 use Lcobucci\JWT\Signer\Hmac;

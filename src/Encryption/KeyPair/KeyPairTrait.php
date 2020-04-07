@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Fazland\OAuthBundle\Encryption\KeyPair;
+namespace Refugis\OAuthBundle\Encryption\KeyPair;
 
-use Fazland\OAuthBundle\Enum\SignatureAlgorithm;
+use Refugis\OAuthBundle\Enum\SignatureAlgorithm;
 
 /**
  * Trait for common implementation of the KeyPairInterface.

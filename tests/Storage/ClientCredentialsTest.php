@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace Fazland\OAuthBundle\Tests\Storage;
+namespace Refugis\OAuthBundle\Tests\Storage;
 
-use Fazland\OAuthBundle\Security\Provider\UserProviderInterface;
-use Fazland\OAuthBundle\Security\User\OAuthClientInterface;
-use Fazland\OAuthBundle\Storage\ClientCredentials;
+use Refugis\OAuthBundle\Security\Provider\UserProviderInterface;
+use Refugis\OAuthBundle\Security\User\OAuthClientInterface;
+use Refugis\OAuthBundle\Storage\ClientCredentials;
 use PHPUnit\Framework\TestCase;
 use Prophecy\Prophecy\ObjectProphecy;
 

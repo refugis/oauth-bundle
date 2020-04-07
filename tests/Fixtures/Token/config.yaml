@@ -4,7 +4,7 @@ security:
             anonymous: true
             stateless: true
             oauth:
-                oauth_user_provider: Fazland\OAuthBundle\Tests\Fixtures\Token\UserProvider
+                oauth_user_provider: Refugis\OAuthBundle\Tests\Fixtures\Token\UserProvider
 
 framework:
     test: ~
@@ -21,4 +21,4 @@ services:
     logger:
         class: Psr\Log\NullLogger
 
-    Fazland\OAuthBundle\Tests\Fixtures\Token\UserProvider: ~
+    Refugis\OAuthBundle\Tests\Fixtures\Token\UserProvider: ~

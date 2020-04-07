@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Fazland\OAuthBundle\Security\User;
+namespace Refugis\OAuthBundle\Security\User;
 
-use Fazland\OAuthBundle\Encryption\KeyPair\KeyPairInterface;
+use Refugis\OAuthBundle\Encryption\KeyPair\KeyPairInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 interface OAuthClientInterface extends UserInterface, KeyPairInterface

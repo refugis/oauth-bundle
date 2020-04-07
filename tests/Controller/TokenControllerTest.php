@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace Fazland\OAuthBundle\Tests\Controller;
+namespace Refugis\OAuthBundle\Tests\Controller;
 
-use Fazland\OAuthBundle\Tests\Fixtures\Token\AppKernel;
-use Fazland\OAuthBundle\Tests\Fixtures\Token\OAuthClient;
+use Refugis\OAuthBundle\Tests\Fixtures\Token\AppKernel;
+use Refugis\OAuthBundle\Tests\Fixtures\Token\OAuthClient;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;

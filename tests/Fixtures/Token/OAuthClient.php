@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace Fazland\OAuthBundle\Tests\Fixtures\Token;
+namespace Refugis\OAuthBundle\Tests\Fixtures\Token;
 
-use Fazland\OAuthBundle\Encryption\KeyPair\KeyPairTrait;
-use Fazland\OAuthBundle\Enum\SignatureAlgorithm;
-use Fazland\OAuthBundle\GrantType\ClientCredentials;
-use Fazland\OAuthBundle\Security\User\OAuthClientInterface;
+use Refugis\OAuthBundle\Encryption\KeyPair\KeyPairTrait;
+use Refugis\OAuthBundle\Enum\SignatureAlgorithm;
+use Refugis\OAuthBundle\GrantType\ClientCredentials;
+use Refugis\OAuthBundle\Security\User\OAuthClientInterface;
 
 class OAuthClient implements OAuthClientInterface
 {
