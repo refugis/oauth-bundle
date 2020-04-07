@@ -14,15 +14,8 @@ use Symfony\Component\Security\Core\User\UserInterface;
 
 class OAuthProvider implements AuthenticationProviderInterface
 {
-    /**
-     * @var UserProviderInterface
-     */
-    private $userProvider;
-
-    /**
-     * @var UserCheckerInterface
-     */
-    private $userChecker;
+    private UserProviderInterface $userProvider;
+    private UserCheckerInterface $userChecker;
 
     public function __construct(UserProviderInterface $userProvider, UserCheckerInterface $userChecker)
     {

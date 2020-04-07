@@ -18,7 +18,7 @@
         }
     ],
     "require": {
-        "php": "^7.3",
+        "php": "^7.4",
         "ext-json": "*",
         "ext-openssl": "*",
         "bshaffer/oauth2-server-httpfoundation-bridge": "^1.4",

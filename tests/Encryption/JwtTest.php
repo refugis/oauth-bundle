@@ -8,10 +8,7 @@ use Refugis\OAuthBundle\Enum\SignatureAlgorithm;
 
 class JwtTest extends TestCase
 {
-    /**
-     * @var Jwt
-     */
-    private $encoder;
+    private Jwt $encoder;
 
     /**
      * {@inheritdoc}

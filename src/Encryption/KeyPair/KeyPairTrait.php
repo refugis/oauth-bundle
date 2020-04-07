@@ -9,20 +9,9 @@ use Refugis\OAuthBundle\Enum\SignatureAlgorithm;
  */
 trait KeyPairTrait
 {
-    /**
-     * @var string
-     */
-    private $privateKey;
-
-    /**
-     * @var string
-     */
-    private $publicKey;
-
-    /**
-     * @var SignatureAlgorithm
-     */
-    private $signatureAlgorithm;
+    private string $privateKey;
+    private string $publicKey;
+    private SignatureAlgorithm $signatureAlgorithm;
 
     /**
      * {@inheritdoc}

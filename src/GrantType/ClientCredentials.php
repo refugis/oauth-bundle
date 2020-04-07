@@ -5,6 +5,7 @@ namespace Refugis\OAuthBundle\GrantType;
 use OAuth2\ClientAssertionType\HttpBasic;
 use OAuth2\GrantType\GrantTypeInterface;
 use OAuth2\ResponseType\AccessTokenInterface;
+use OAuth2\Storage\ClientCredentialsInterface;
 
 class ClientCredentials extends HttpBasic implements GrantTypeInterface
 {
@@ -51,7 +52,7 @@ class ClientCredentials extends HttpBasic implements GrantTypeInterface
     /**
      * {@inheritdoc}
      */
-    public function createAccessToken(AccessTokenInterface $accessToken, $client_id, $user_id, $scope): array
+    public function createAccessToken(AccessTokenInterface $accessToken, $clientId, $userId, $scope): array
     {
         /**
          * Client Credentials Grant does NOT include a refresh token.
@@ -60,7 +61,7 @@ class ClientCredentials extends HttpBasic implements GrantTypeInterface
          */
         $includeRefreshToken = false;
 
-        return $accessToken->createAccessToken($client_id, $user_id, $scope, $includeRefreshToken);
+        return $accessToken->createAccessToken($clientId, $userId, $scope, $includeRefreshToken);
     }
 
     /**

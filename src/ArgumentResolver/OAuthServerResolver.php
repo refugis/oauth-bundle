@@ -12,10 +12,7 @@ use Symfony\Component\Security\Http\FirewallMapInterface;
 
 class OAuthServerResolver implements ArgumentValueResolverInterface
 {
-    /**
-     * @var FirewallMapInterface
-     */
-    private $firewallMap;
+    private FirewallMapInterface $firewallMap;
 
     public function __construct(FirewallMapInterface $firewallMap)
     {

@@ -15,7 +15,7 @@ final class CreateClientCommand extends Command
     /**
      * @var UserProviderInterface[]
      */
-    private $userProviders;
+    private array $userProviders;
 
     public function __construct()
     {

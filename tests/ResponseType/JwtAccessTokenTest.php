@@ -20,27 +20,27 @@ class JwtAccessTokenTest extends TestCase
     /**
      * @var UserProviderInterface|ObjectProphecy
      */
-    private $userProvider;
+    private object $userProvider;
 
     /**
      * @var JwtAccessToken|ObjectProphecy
      */
-    private $accessToken;
+    private object $accessToken;
 
     /**
      * @var Jwt|ObjectProphecy
      */
-    private $encoder;
+    private object $encoder;
 
     /**
      * @var RefreshTokenInterface|ObjectProphecy
      */
-    private $refreshStorage;
+    private object $refreshStorage;
 
     /**
      * @var JwtAccessToken
      */
-    private $jwt;
+    private JwtAccessToken $jwt;
 
     /**
      * {@inheritdoc}

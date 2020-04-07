@@ -15,10 +15,7 @@ class JwtAccessToken extends BaseJwtAccessToken
     public const DEFAULT_REFRESH_TOKEN_LIFETIME = 2592000; // 30 days
     public const DEFAULT_ACCESS_LIFETIME = 3600;           // 1 hour
 
-    /**
-     * @var UserProviderInterface
-     */
-    private $userProvider;
+    private UserProviderInterface $userProvider;
 
     /**
      * {@inheritdoc}

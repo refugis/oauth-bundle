@@ -17,20 +17,9 @@ use Symfony\Component\Security\Core\Exception\AuthenticationException;
 
 class OAuthFirewall
 {
-    /**
-     * @var Server
-     */
-    private $oauthServer;
-
-    /**
-     * @var TokenStorageInterface
-     */
-    private $tokenStorage;
-
-    /**
-     * @var AuthenticationManagerInterface
-     */
-    private $authenticationManager;
+    private Server $oauthServer;
+    private TokenStorageInterface $tokenStorage;
+    private AuthenticationManagerInterface $authenticationManager;
 
     public function __construct(
         Server $oauthServer,

@@ -12,10 +12,7 @@ use Refugis\OAuthBundle\Storage\Jwt as StorageJwt;
 
 class Jwt extends BaseJwt
 {
-    /**
-     * @var ParserInterface
-     */
-    private $parser;
+    private ParserInterface $parser;
 
     public function __construct()
     {

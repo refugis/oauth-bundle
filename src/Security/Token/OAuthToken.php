@@ -6,10 +6,7 @@ use Symfony\Component\Security\Core\Authentication\Token\AbstractToken;
 
 class OAuthToken extends AbstractToken
 {
-    /**
-     * @var array
-     */
-    private $token;
+    private array $token;
 
     /**
      * @return array

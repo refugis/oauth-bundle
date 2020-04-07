@@ -26,22 +26,19 @@ class OAuthFirewallTest extends TestCase
     /**
      * @var Server|ObjectProphecy
      */
-    private $server;
+    private object $server;
 
     /**
      * @var TokenStorageInterface|ObjectProphecy
      */
-    private $tokenStorage;
+    private object $tokenStorage;
 
     /**
      * @var AuthenticationManagerInterface|ObjectProphecy
      */
-    private $authenticationManager;
+    private object $authenticationManager;
 
-    /**
-     * @var OAuthFirewall
-     */
-    private $firewall;
+    private OAuthFirewall $firewall;
 
     /**
      * {@inheritdoc}

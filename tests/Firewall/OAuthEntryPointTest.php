@@ -13,7 +13,7 @@ class OAuthEntryPointTest extends TestCase
     /**
      * @var OAuthEntryPoint|ObjectProphecy
      */
-    private $entryPoint;
+    private object $entryPoint;
 
     /**
      * {@inheritdoc}

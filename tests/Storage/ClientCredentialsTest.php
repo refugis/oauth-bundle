@@ -13,12 +13,12 @@ class ClientCredentialsTest extends TestCase
     /**
      * @var UserProviderInterface|ObjectProphecy
      */
-    private $userProvider;
+    private object $userProvider;
 
     /**
      * @var ClientCredentials
      */
-    private $storage;
+    private ClientCredentials $storage;
 
     /**
      * {@inheritdoc}

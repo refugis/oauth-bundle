@@ -7,10 +7,7 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 
 class OAuthAuthenticationException extends \RuntimeException
 {
-    /**
-     * @var JsonResponse
-     */
-    private $response;
+    private JsonResponse $response;
 
     /**
      * {@inheritdoc}

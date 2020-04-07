@@ -24,20 +24,9 @@ class Jwt implements JwtAccessTokenInterface, JwtBearerInterface, LoggerAwareInt
 {
     use LoggerAwareTrait;
 
-    /**
-     * @var UserProviderInterface
-     */
-    private $userProvider;
-
-    /**
-     * @var array
-     */
-    private $config;
-
-    /**
-     * @var Parser
-     */
-    private $parser;
+    private UserProviderInterface $userProvider;
+    private array $config;
+    private Parser $parser;
 
     public function __construct(UserProviderInterface $userProvider, array $config)
     {

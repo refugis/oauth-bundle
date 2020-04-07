@@ -8,10 +8,7 @@ use Refugis\OAuthBundle\Security\User\OAuthClientInterface;
 
 class ClientCredentials implements ClientCredentialsInterface
 {
-    /**
-     * @var UserProviderInterface
-     */
-    private $userProvider;
+    private UserProviderInterface $userProvider;
 
     public function __construct(UserProviderInterface $userProvider)
     {
