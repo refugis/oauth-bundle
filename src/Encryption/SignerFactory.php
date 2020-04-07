@@ -2,11 +2,11 @@
 
 namespace Refugis\OAuthBundle\Encryption;
 
-use Refugis\OAuthBundle\Enum\SignatureAlgorithm;
 use Lcobucci\JWT\Signer;
 use Lcobucci\JWT\Signer\Ecdsa;
 use Lcobucci\JWT\Signer\Hmac;
 use Lcobucci\JWT\Signer\Rsa;
+use Refugis\OAuthBundle\Enum\SignatureAlgorithm;
 
 class SignerFactory
 {

@@ -3,11 +3,6 @@
 namespace Refugis\OAuthBundle\Storage;
 
 use Cake\Chronos\Chronos;
-use Refugis\OAuthBundle\Clock\ChronosClock;
-use Refugis\OAuthBundle\Encryption\KeyPair\KeyPairInterface;
-use Refugis\OAuthBundle\Encryption\SignerFactory;
-use Refugis\OAuthBundle\Enum\SignatureAlgorithm;
-use Refugis\OAuthBundle\Security\Provider\UserProviderInterface;
 use Lcobucci\Jose\Parsing\Parser as Decoder;
 use Lcobucci\JWT\Parser;
 use Lcobucci\JWT\Signer\Key;
@@ -19,6 +14,11 @@ use OAuth2\Storage\JwtAccessTokenInterface;
 use OAuth2\Storage\JwtBearerInterface;
 use Psr\Log\LoggerAwareInterface;
 use Psr\Log\LoggerAwareTrait;
+use Refugis\OAuthBundle\Clock\ChronosClock;
+use Refugis\OAuthBundle\Encryption\KeyPair\KeyPairInterface;
+use Refugis\OAuthBundle\Encryption\SignerFactory;
+use Refugis\OAuthBundle\Enum\SignatureAlgorithm;
+use Refugis\OAuthBundle\Security\Provider\UserProviderInterface;
 
 class Jwt implements JwtAccessTokenInterface, JwtBearerInterface, LoggerAwareInterface
 {

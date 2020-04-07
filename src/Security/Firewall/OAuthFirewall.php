@@ -2,11 +2,11 @@
 
 namespace Refugis\OAuthBundle\Security\Firewall;
 
-use Refugis\OAuthBundle\Exception\OAuthAuthenticationException;
-use Refugis\OAuthBundle\Security\Token\OAuthToken;
 use OAuth2\HttpFoundationBridge\Request;
 use OAuth2\Response;
 use OAuth2\Server;
+use Refugis\OAuthBundle\Exception\OAuthAuthenticationException;
+use Refugis\OAuthBundle\Security\Token\OAuthToken;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response as HttpResponse;
 use Symfony\Component\HttpKernel\Event\RequestEvent;

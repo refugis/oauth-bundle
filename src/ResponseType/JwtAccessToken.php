@@ -3,12 +3,12 @@
 namespace Refugis\OAuthBundle\ResponseType;
 
 use Cake\Chronos\Chronos;
-use Refugis\OAuthBundle\Encryption\KeyPair\KeyPairInterface;
-use Refugis\OAuthBundle\Security\Provider\UserProviderInterface;
 use OAuth2\Encryption\EncryptionInterface;
 use OAuth2\ResponseType\JwtAccessToken as BaseJwtAccessToken;
 use OAuth2\Storage\AccessTokenInterface as AccessTokenStorageInterface;
 use OAuth2\Storage\RefreshTokenInterface;
+use Refugis\OAuthBundle\Encryption\KeyPair\KeyPairInterface;
+use Refugis\OAuthBundle\Security\Provider\UserProviderInterface;
 
 class JwtAccessToken extends BaseJwtAccessToken
 {

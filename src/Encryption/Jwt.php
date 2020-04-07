@@ -2,14 +2,13 @@
 
 namespace Refugis\OAuthBundle\Encryption;
 
-use Refugis\OAuthBundle\Enum\SignatureAlgorithm;
-use Refugis\OAuthBundle\Storage\Jwt as StorageJwt;
 use Lcobucci\Jose\Parsing\Parser as Decoder;
 use Lcobucci\JWT\Parser as ParserInterface;
-use Lcobucci\JWT\Signer\Ecdsa;
 use Lcobucci\JWT\Signer\Key;
 use Lcobucci\JWT\Token;
 use OAuth2\Encryption\Jwt as BaseJwt;
+use Refugis\OAuthBundle\Enum\SignatureAlgorithm;
+use Refugis\OAuthBundle\Storage\Jwt as StorageJwt;
 
 class Jwt extends BaseJwt
 {

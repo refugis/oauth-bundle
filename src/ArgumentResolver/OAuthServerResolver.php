@@ -2,8 +2,8 @@
 
 namespace Refugis\OAuthBundle\ArgumentResolver;
 
-use Refugis\OAuthBundle\Security\Firewall\OAuthFirewall;
 use OAuth2\Server;
+use Refugis\OAuthBundle\Security\Firewall\OAuthFirewall;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpKernel\Controller\ArgumentValueResolverInterface;
 use Symfony\Component\HttpKernel\ControllerMetadata\ArgumentMetadata;

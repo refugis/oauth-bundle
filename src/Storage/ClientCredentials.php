@@ -2,9 +2,9 @@
 
 namespace Refugis\OAuthBundle\Storage;
 
+use OAuth2\Storage\ClientCredentialsInterface;
 use Refugis\OAuthBundle\Security\Provider\UserProviderInterface;
 use Refugis\OAuthBundle\Security\User\OAuthClientInterface;
-use OAuth2\Storage\ClientCredentialsInterface;
 
 class ClientCredentials implements ClientCredentialsInterface
 {

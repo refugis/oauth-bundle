@@ -70,11 +70,7 @@ final class CreateClientCommand extends Command
             }, ARRAY_FILTER_USE_KEY);
 
             if (0 === \count($filteredUserProviders)) {
-                throw new \RuntimeException(\sprintf(
-                    'Could not find the desired %s implementation using %s as firewall name',
-                    UserProviderInterface::class,
-                    $targetFirewallName
-                ));
+                throw new \RuntimeException(\sprintf('Could not find the desired %s implementation using %s as firewall name', UserProviderInterface::class, $targetFirewallName));
             }
 
             $userProvider = \current($filteredUserProviders);

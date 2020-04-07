@@ -2,9 +2,9 @@
 
 namespace Refugis\OAuthBundle\Tests\Firewall;
 
-use Refugis\OAuthBundle\Security\Firewall\OAuthEntryPoint;
 use PHPUnit\Framework\TestCase;
 use Prophecy\Prophecy\ObjectProphecy;
+use Refugis\OAuthBundle\Security\Firewall\OAuthEntryPoint;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 

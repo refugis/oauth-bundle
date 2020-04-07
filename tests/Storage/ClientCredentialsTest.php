@@ -2,11 +2,11 @@
 
 namespace Refugis\OAuthBundle\Tests\Storage;
 
+use PHPUnit\Framework\TestCase;
+use Prophecy\Prophecy\ObjectProphecy;
 use Refugis\OAuthBundle\Security\Provider\UserProviderInterface;
 use Refugis\OAuthBundle\Security\User\OAuthClientInterface;
 use Refugis\OAuthBundle\Storage\ClientCredentials;
-use PHPUnit\Framework\TestCase;
-use Prophecy\Prophecy\ObjectProphecy;
 
 class ClientCredentialsTest extends TestCase
 {

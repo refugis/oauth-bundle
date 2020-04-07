@@ -2,9 +2,9 @@
 
 namespace Refugis\OAuthBundle\Tests\Encryption;
 
+use PHPUnit\Framework\TestCase;
 use Refugis\OAuthBundle\Encryption\Jwt;
 use Refugis\OAuthBundle\Enum\SignatureAlgorithm;
-use PHPUnit\Framework\TestCase;
 
 class JwtTest extends TestCase
 {

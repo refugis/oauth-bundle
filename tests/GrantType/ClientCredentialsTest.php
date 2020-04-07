@@ -2,12 +2,12 @@
 
 namespace Refugis\OAuthBundle\Tests\OAuth\GrantType;
 
-use Refugis\OAuthBundle\GrantType\ClientCredentials;
 use OAuth2\ResponseType\AccessTokenInterface;
 use OAuth2\Storage\ClientCredentialsInterface;
 use PHPUnit\Framework\TestCase;
 use Prophecy\Argument;
 use Prophecy\Prophecy\ObjectProphecy;
+use Refugis\OAuthBundle\GrantType\ClientCredentials;
 
 class ClientCredentialsTest extends TestCase
 {

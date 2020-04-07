@@ -2,6 +2,10 @@
 
 namespace Refugis\OAuthBundle\Tests\ResponseType;
 
+use OAuth2\Storage\RefreshTokenInterface;
+use PHPUnit\Framework\TestCase;
+use Prophecy\Argument;
+use Prophecy\Prophecy\ObjectProphecy;
 use Refugis\OAuthBundle\Encryption\Jwt;
 use Refugis\OAuthBundle\Encryption\KeyPair\KeyPairInterface;
 use Refugis\OAuthBundle\Enum\SignatureAlgorithm;
@@ -9,10 +13,6 @@ use Refugis\OAuthBundle\ResponseType\JwtAccessToken;
 use Refugis\OAuthBundle\Security\Provider\UserProviderInterface;
 use Refugis\OAuthBundle\Security\User\OAuthClientInterface;
 use Refugis\OAuthBundle\Storage\Jwt as JwtStorage;
-use OAuth2\Storage\RefreshTokenInterface;
-use PHPUnit\Framework\TestCase;
-use Prophecy\Argument;
-use Prophecy\Prophecy\ObjectProphecy;
 use Symfony\Component\Security\Core\User\UserInterface;
 
 class JwtAccessTokenTest extends TestCase

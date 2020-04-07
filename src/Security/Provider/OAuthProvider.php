@@ -2,9 +2,9 @@
 
 namespace Refugis\OAuthBundle\Security\Provider;
 
+use OAuth2\HttpFoundationBridge\Response;
 use Refugis\OAuthBundle\Exception\OAuthAuthenticationException;
 use Refugis\OAuthBundle\Security\Token\OAuthToken;
-use OAuth2\HttpFoundationBridge\Response;
 use Symfony\Component\Security\Core\Authentication\Provider\AuthenticationProviderInterface;
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
 use Symfony\Component\Security\Core\Exception\AccountStatusException;
@@ -115,11 +115,7 @@ class OAuthProvider implements AuthenticationProviderInterface
         try {
             $this->userChecker->$method($user);
         } catch (AccountStatusException $ex) {
-            throw new OAuthAuthenticationException(
-                Response::HTTP_UNAUTHORIZED,
-                'access_denied',
-                $ex->getMessage()
-            );
+            throw new OAuthAuthenticationException(Response::HTTP_UNAUTHORIZED, 'access_denied', $ex->getMessage());
         }
 
         $token->setUser($user);

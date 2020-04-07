@@ -2,9 +2,9 @@
 
 namespace App\Tests\Encryption;
 
+use PHPUnit\Framework\TestCase;
 use Refugis\OAuthBundle\Encryption\SignerFactory;
 use Refugis\OAuthBundle\Enum\SignatureAlgorithm;
-use PHPUnit\Framework\TestCase;
 
 class SignerFactoryTest extends TestCase
 {

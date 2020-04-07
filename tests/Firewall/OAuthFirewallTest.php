@@ -2,15 +2,15 @@
 
 namespace Refugis\OAuthBundle\Tests\Firewall;
 
-use Refugis\OAuthBundle\Exception\OAuthAuthenticationException;
-use Refugis\OAuthBundle\Security\Firewall\OAuthFirewall;
-use Refugis\OAuthBundle\Security\Token\OAuthToken;
 use OAuth2\HttpFoundationBridge\Request;
 use OAuth2\Response;
 use OAuth2\Server;
 use PHPUnit\Framework\TestCase;
 use Prophecy\Argument;
 use Prophecy\Prophecy\ObjectProphecy;
+use Refugis\OAuthBundle\Exception\OAuthAuthenticationException;
+use Refugis\OAuthBundle\Security\Firewall\OAuthFirewall;
+use Refugis\OAuthBundle\Security\Token\OAuthToken;
 use Symfony\Component\HttpFoundation\HeaderBag;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request as HttpRequest;
