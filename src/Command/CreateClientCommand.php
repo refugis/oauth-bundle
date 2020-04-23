@@ -50,7 +50,7 @@ final class CreateClientCommand extends Command
     /**
      * {@inheritdoc}
      */
-    protected function execute(InputInterface $input, OutputInterface $output): void
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $io = new SymfonyStyle($input, $output);
         $io->title('Refugis - Create OAuth Client');
@@ -83,7 +83,6 @@ final class CreateClientCommand extends Command
         }
 
         $clientName = $input->getArgument('name');
-
         $redirectUris = $input->getOption('redirect-uri');
         if (! \is_array($redirectUris)) {
             $redirectUris = [$redirectUris];
@@ -102,5 +101,7 @@ final class CreateClientCommand extends Command
         ]);
 
         $io->success('OAuthClient Successfully created!');
+
+        return 0;
     }
 }
